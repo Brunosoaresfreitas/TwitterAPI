@@ -1,0 +1,17 @@
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\bin\Debug\net6.0\Twitter.Infrastructure.deps.json
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\bin\Debug\net6.0\Twitter.Infrastructure.runtimeconfig.json
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\bin\Debug\net6.0\Twitter.Infrastructure.dll
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\bin\Debug\net6.0\Twitter.Infrastructure.pdb
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\bin\Debug\net6.0\Twitter.Core.dll
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\bin\Debug\net6.0\Twitter.Core.pdb
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\obj\Debug\net6.0\Twitter.Infrastructure.csproj.AssemblyReference.cache
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\obj\Debug\net6.0\Twitter.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\obj\Debug\net6.0\Twitter.Infrastructure.AssemblyInfoInputs.cache
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\obj\Debug\net6.0\Twitter.Infrastructure.AssemblyInfo.cs
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\obj\Debug\net6.0\Twitter.Infrastructure.csproj.CoreCompileInputs.cache
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\obj\Debug\net6.0\Twitter.Infrastructure.csproj.CopyComplete
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\obj\Debug\net6.0\Twitter.Infrastructure.dll
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\obj\Debug\net6.0\refint\Twitter.Infrastructure.dll
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\obj\Debug\net6.0\Twitter.Infrastructure.pdb
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\obj\Debug\net6.0\Twitter.Infrastructure.genruntimeconfig.cache
+C:\ProjetosCS\Twitter\Twitter\Twitter.Infrastructure\obj\Debug\net6.0\ref\Twitter.Infrastructure.dll

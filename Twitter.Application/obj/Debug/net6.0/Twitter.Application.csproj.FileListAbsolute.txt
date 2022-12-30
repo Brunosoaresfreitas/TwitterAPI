@@ -1,0 +1,15 @@
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\bin\Debug\net6.0\Twitter.Application.deps.json
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\bin\Debug\net6.0\Twitter.Application.dll
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\bin\Debug\net6.0\Twitter.Application.pdb
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\obj\Debug\net6.0\Twitter.Application.csproj.AssemblyReference.cache
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\obj\Debug\net6.0\Twitter.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\obj\Debug\net6.0\Twitter.Application.AssemblyInfoInputs.cache
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\obj\Debug\net6.0\Twitter.Application.AssemblyInfo.cs
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\obj\Debug\net6.0\Twitter.Application.csproj.CoreCompileInputs.cache
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\obj\Debug\net6.0\Twitter.Application.dll
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\obj\Debug\net6.0\refint\Twitter.Application.dll
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\obj\Debug\net6.0\Twitter.Application.pdb
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\obj\Debug\net6.0\ref\Twitter.Application.dll
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\bin\Debug\net6.0\Twitter.Core.dll
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\bin\Debug\net6.0\Twitter.Core.pdb
+C:\ProjetosCS\Twitter\Twitter\Twitter.Application\obj\Debug\net6.0\Twitter.Application.csproj.CopyComplete

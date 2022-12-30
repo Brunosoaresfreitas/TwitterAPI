@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter.API", "Twitter.API\Twitter.API.csproj", "{F94E65E5-8D26-4382-8C1C-84E5BAF05C85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter.Infrastructure", "Twitter.Infrastructure\Twitter.Infrastructure.csproj", "{72591003-799C-4A4F-9024-BA386CB083FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter.Core", "Twitter.Core\Twitter.Core.csproj", "{C0413A77-73F7-4341-B8A2-4DBB59C6801D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Twitter.Application", "Twitter.Application\Twitter.Application.csproj", "{2066947B-0455-4A71-B495-EA2BE8EAD6CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F94E65E5-8D26-4382-8C1C-84E5BAF05C85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F94E65E5-8D26-4382-8C1C-84E5BAF05C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F94E65E5-8D26-4382-8C1C-84E5BAF05C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F94E65E5-8D26-4382-8C1C-84E5BAF05C85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72591003-799C-4A4F-9024-BA386CB083FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72591003-799C-4A4F-9024-BA386CB083FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72591003-799C-4A4F-9024-BA386CB083FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72591003-799C-4A4F-9024-BA386CB083FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0413A77-73F7-4341-B8A2-4DBB59C6801D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0413A77-73F7-4341-B8A2-4DBB59C6801D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0413A77-73F7-4341-B8A2-4DBB59C6801D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0413A77-73F7-4341-B8A2-4DBB59C6801D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2066947B-0455-4A71-B495-EA2BE8EAD6CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2066947B-0455-4A71-B495-EA2BE8EAD6CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2066947B-0455-4A71-B495-EA2BE8EAD6CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2066947B-0455-4A71-B495-EA2BE8EAD6CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37CC748A-7CF8-4EC0-B6B7-2D742D8F9FC2}
+	EndGlobalSection
+EndGlobal
