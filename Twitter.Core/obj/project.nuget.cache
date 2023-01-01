@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZG5ALqHmYTqhBwwFrvUNQsd+pnOTuKywPDEY0ZzjFUbTf1wUWI3RPP+nS9h3u+FeSplY3ihLWyLk+S6GhoRS9A==",
+  "dgSpecHash": "vAFBAnTgpS1Ixrin1nC0SXxt3o2EHm0xIafE6JYFgt7D8I3LLwGaZD6UTSNQ0ERwsFdZn7RDE5oOa5MS4PhmqA==",
   "success": true,
-  "projectFilePath": "C:\\ProjetosCS\\Twitter\\Twitter\\Twitter.Core\\Twitter.Core.csproj",
+  "projectFilePath": "C:\\ProjetoTwitter\\TwitterAPI\\Twitter.Core\\Twitter.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8bM46XTRPjMXFCatQmmmZr1u8oi1StLygFMFo8iXPgSBU+wjFt3lINvspCpWJdOuNME5qiVJEppMYKG9cf1lcA==",
+  "dgSpecHash": "HDu6Q77cevvGYZb+kgaYf20owZwe+Po7IZHyXzpopxq30hqrAoN2kLljGq5jNZftCw5BlZ7B7P8tlf4y4beAyg==",
   "success": true,
-  "projectFilePath": "C:\\ProjetosCS\\Twitter\\Twitter\\Twitter.Infrastructure\\Twitter.Infrastructure.csproj",
+  "projectFilePath": "C:\\ProjetoTwitter\\TwitterAPI\\Twitter.Infrastructure\\Twitter.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bruno\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Bruno\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

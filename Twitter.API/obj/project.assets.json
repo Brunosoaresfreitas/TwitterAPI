@@ -3939,11 +3939,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProjetosCS\\Twitter\\Twitter\\Twitter.API\\Twitter.API.csproj",
+      "projectUniqueName": "C:\\ProjetoTwitter\\TwitterAPI\\Twitter.API\\Twitter.API.csproj",
       "projectName": "Twitter.API",
-      "projectPath": "C:\\ProjetosCS\\Twitter\\Twitter\\Twitter.API\\Twitter.API.csproj",
+      "projectPath": "C:\\ProjetoTwitter\\TwitterAPI\\Twitter.API\\Twitter.API.csproj",
       "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
-      "outputPath": "C:\\ProjetosCS\\Twitter\\Twitter\\Twitter.API\\obj\\",
+      "outputPath": "C:\\ProjetoTwitter\\TwitterAPI\\Twitter.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3965,14 +3965,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\ProjetosCS\\Twitter\\Twitter\\Twitter.Application\\Twitter.Application.csproj": {
-              "projectPath": "C:\\ProjetosCS\\Twitter\\Twitter\\Twitter.Application\\Twitter.Application.csproj"
+            "C:\\ProjetoTwitter\\TwitterAPI\\Twitter.Application\\Twitter.Application.csproj": {
+              "projectPath": "C:\\ProjetoTwitter\\TwitterAPI\\Twitter.Application\\Twitter.Application.csproj"
             },
-            "C:\\ProjetosCS\\Twitter\\Twitter\\Twitter.Core\\Twitter.Core.csproj": {
-              "projectPath": "C:\\ProjetosCS\\Twitter\\Twitter\\Twitter.Core\\Twitter.Core.csproj"
+            "C:\\ProjetoTwitter\\TwitterAPI\\Twitter.Core\\Twitter.Core.csproj": {
+              "projectPath": "C:\\ProjetoTwitter\\TwitterAPI\\Twitter.Core\\Twitter.Core.csproj"
             },
-            "C:\\ProjetosCS\\Twitter\\Twitter\\Twitter.Infrastructure\\Twitter.Infrastructure.csproj": {
-              "projectPath": "C:\\ProjetosCS\\Twitter\\Twitter\\Twitter.Infrastructure\\Twitter.Infrastructure.csproj"
+            "C:\\ProjetoTwitter\\TwitterAPI\\Twitter.Infrastructure\\Twitter.Infrastructure.csproj": {
+              "projectPath": "C:\\ProjetoTwitter\\TwitterAPI\\Twitter.Infrastructure\\Twitter.Infrastructure.csproj"
             }
           }
         }
