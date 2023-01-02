@@ -2,8 +2,9 @@
 {
     public class Tweet : BaseEntity
     {
-        public Tweet(string description)
+        public Tweet(int idUser, string description)
         {
+            IdUser = idUser;
             Description = description;
             PostedAt = DateTime.Now;
             Likes = 0;
@@ -18,6 +19,9 @@
         public int Likes { get; private set; }
         public int Retweets { get; private set; }
         public int TweetComments { get; private set; }
+
+        public int IdUser { get; private set; }
+        public User User { get; private set; }
         public List<Comment> Comments { get; private set; }
 
         public void UpdateTweet(string description)

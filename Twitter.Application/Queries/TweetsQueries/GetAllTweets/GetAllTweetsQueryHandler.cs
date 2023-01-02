@@ -18,7 +18,7 @@ namespace Twitter.Application.Queries.GetAllTweets
             var tweets = await _tweetRepository.GetAllAsync();
 
             var tweetsViewModel = tweets
-                .Select(t => new TweetViewModel(t.Id, t.Description, t.Likes, t.Retweets, t.TweetComments))
+                .Select(t => new TweetViewModel(t.Id, t.IdUser, t.Description, t.Likes, t.Retweets, t.TweetComments))
                 .ToList();
 
             return tweetsViewModel;

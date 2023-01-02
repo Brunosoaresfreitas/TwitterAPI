@@ -18,4 +18,8 @@
     <ProjectReference Include="..\Twitter.Core\Twitter.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Persistence\Migrations\" />
+  </ItemGroup>
+
 </Project>

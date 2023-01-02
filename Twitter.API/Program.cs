@@ -19,12 +19,13 @@ builder.Services.AddDbContext<TwitterDbContext>
     (options => options.UseSqlServer(connectionString));
 
 builder.Services.AddScoped<ITweetRepository, TweetRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 builder.Services.AddMediatR(typeof(CreateTweetCommand));
 
 builder.Services.AddControllers(options => options.Filters.Add(typeof(ValidationFilter)));
 
-builder.Services.AddFluentValidation();
+builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<CreateTweetCommandValidator>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

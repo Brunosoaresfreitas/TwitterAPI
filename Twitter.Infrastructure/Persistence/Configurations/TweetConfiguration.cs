@@ -16,6 +16,12 @@ namespace Twitter.Infrastructure.Persistence.Configurations
                 .WithOne()
                 .HasForeignKey(co => co.IdTweet)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            builder
+                .HasOne(u => u.User)
+                .WithMany(u => u.UserTweets)
+                .HasForeignKey(u => u.IdUser)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

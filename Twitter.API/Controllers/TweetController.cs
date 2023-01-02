@@ -28,6 +28,11 @@ namespace Twitter.API.Controllers
 
             var tweets = await _mediator.Send(command);
 
+            if (tweets == null)
+            {
+                return NotFound();
+            }
+
             return Ok(tweets);
         }
 

@@ -15,7 +15,7 @@ namespace Twitter.Application.Commands.CreateTweet
 
         public async Task<int> Handle(CreateTweetCommand request, CancellationToken cancellationToken)
         {
-            var tweet = new Tweet(request.Description);
+            var tweet = new Tweet(request.IdUser, request.Description);
 
             await _tweetRepository.CreateTweetAsync(tweet);
             await _tweetRepository.SaveChangesAsync();

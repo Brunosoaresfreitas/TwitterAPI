@@ -16,7 +16,7 @@ namespace Twitter.Application.Commands.CreateComment
         {
             var tweet = await _tweetRepository.GetByIdAsync(request.IdTweet);
 
-            tweet.Comments.Add(new Comment(request.IdTweet, request.TweetComment));
+            tweet.Comments.Add(new Comment(request.IdTweet, request.UserId, request.TweetComment));
             tweet.TweetComment();
 
             await _tweetRepository.SaveChangesAsync();

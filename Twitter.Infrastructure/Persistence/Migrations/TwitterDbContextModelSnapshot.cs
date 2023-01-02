@@ -49,9 +49,14 @@ namespace Twitter.Infrastructure.Persistence.Migrations
                     b.Property<int>("TweetComments")
                         .HasColumnType("int");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("IdTweet");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Comments");
                 });
@@ -68,6 +73,9 @@ namespace Twitter.Infrastructure.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("IdUser")
+                        .HasColumnType("int");
+
                     b.Property<int>("Likes")
                         .HasColumnType("int");
 
@@ -82,7 +90,46 @@ namespace Twitter.Infrastructure.Persistence.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("IdUser");
+
                     b.ToTable("Tweets");
+                });
+
+            modelBuilder.Entity("Twitter.Core.Entities.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("BirthDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("Twitter.Core.Entities.Comment", b =>
@@ -92,11 +139,37 @@ namespace Twitter.Infrastructure.Persistence.Migrations
                         .HasForeignKey("IdTweet")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.HasOne("Twitter.Core.Entities.User", "User")
+                        .WithMany("UserComments")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Twitter.Core.Entities.Tweet", b =>
+                {
+                    b.HasOne("Twitter.Core.Entities.User", "User")
+                        .WithMany("UserTweets")
+                        .HasForeignKey("IdUser")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Twitter.Core.Entities.Tweet", b =>
                 {
                     b.Navigation("Comments");
+                });
+
+            modelBuilder.Entity("Twitter.Core.Entities.User", b =>
+                {
+                    b.Navigation("UserComments");
+
+                    b.Navigation("UserTweets");
                 });
 #pragma warning restore 612, 618
         }

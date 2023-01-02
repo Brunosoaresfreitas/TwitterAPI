@@ -11,6 +11,12 @@ namespace Twitter.Infrastructure.Persistence.Configurations
         {
             builder
                 .HasKey(co => co.Id);
+            
+            builder
+                .HasOne(u => u.User)
+                .WithMany(u => u.UserComments)
+                .HasForeignKey(u => u.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

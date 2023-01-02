@@ -10,6 +10,7 @@ namespace Twitter.Application.Commands.CreateComment
         }
 
         public int IdTweet { get; private set; }
+        public int UserId { get; set; }
         public string TweetComment { get;  set; }
     }
 }

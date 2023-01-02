@@ -4,9 +4,10 @@ namespace Twitter.Application.ViewModels
 {
     public class TweetViewModel
     {
-        public TweetViewModel(int id, string description, int likes, int retweets, int tweetComments)
+        public TweetViewModel(int id, int idUser, string description, int likes, int retweets, int tweetComments)
         {
             Id = id;
+            IdUser = idUser;
             Description = description;
             Likes = likes;
             Retweets = retweets;
@@ -15,6 +16,7 @@ namespace Twitter.Application.ViewModels
         }
 
         public int Id { get; private set; }
+        public int IdUser { get; private set; }
         public string Description { get; private set; }
         public int Likes { get; private set; }
         public int Retweets { get; private set; }
