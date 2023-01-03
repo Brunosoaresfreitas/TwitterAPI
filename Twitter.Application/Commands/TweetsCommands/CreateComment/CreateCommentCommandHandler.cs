@@ -16,6 +16,11 @@ namespace Twitter.Application.Commands.CreateComment
         {
             var tweet = await _tweetRepository.GetByIdAsync(request.IdTweet);
 
+            if (tweet == null)
+            {
+                throw new NullReferenceException("O id do tweet informado não existe!");
+            }
+
             tweet.Comments.Add(new Comment(request.IdTweet, request.UserId, request.TweetComment));
             tweet.TweetComment();
 

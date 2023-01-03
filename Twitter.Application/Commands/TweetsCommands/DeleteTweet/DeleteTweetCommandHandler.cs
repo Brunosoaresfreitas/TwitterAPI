@@ -16,6 +16,11 @@ namespace Twitter.Application.Commands.DeleteTweet
         {
             var tweet = await _tweetRepository.GetByIdAsync(request.Id);
 
+            if (tweet == null)
+            {
+                throw new NullReferenceException("O id do tweet informado não existe!");
+            }
+
             await _tweetRepository.DeleteTweetAsync(tweet);
             await _tweetRepository.SaveChangesAsync();
 

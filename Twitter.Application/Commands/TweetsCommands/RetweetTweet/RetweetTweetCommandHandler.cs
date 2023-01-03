@@ -16,6 +16,11 @@ namespace Twitter.Application.Commands.RetweetTweet
         {
             var tweet = await _tweetRepository.GetByIdAsync(request.Id);
 
+            if (tweet == null)
+            {
+                throw new NullReferenceException("O id do tweet informado não existe!");
+            }
+
             tweet.Retweet();
 
             await _tweetRepository.SaveChangesAsync();

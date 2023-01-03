@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Twitter.Application.Commands.UsersCommands.CreateUser;
 using Twitter.Application.Commands.UsersCommands.DisableUserAccount;
+using Twitter.Application.Commands.UsersCommands.LoginUser;
 using Twitter.Application.Commands.UsersCommands.UpdateUserAccount;
 using Twitter.Application.Queries.UsersQueries.GetAllUsers;
 using Twitter.Application.Queries.UsersQueries.GetUserById;
@@ -69,6 +70,20 @@ namespace Twitter.API.Controllers
             await _mediator.Send(command);
 
             return Ok();
+        }
+
+        [HttpPut("login")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Login([FromBody] LoginUserCommand command)
+        {
+            var loginUserViewModel = await _mediator.Send(command);
+
+            if (loginUserViewModel == null)
+            {
+                return BadRequest();
+            }
+
+            return Ok(loginUserViewModel);
         }
 
         [HttpPut("{id}/disable")]

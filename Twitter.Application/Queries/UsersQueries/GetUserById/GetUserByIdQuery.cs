@@ -1,9 +1,10 @@
 ﻿using MediatR;
+using Twitter.Application.ViewModels;
 using Twitter.Core.Entities;
 
 namespace Twitter.Application.Queries.UsersQueries.GetUserById
 {
-    public class GetUserByIdQuery : IRequest<User>
+    public class GetUserByIdQuery : IRequest<UserViewModel>
     {
         public GetUserByIdQuery(int id)
         {

@@ -17,6 +17,11 @@ namespace Twitter.Application.Queries.UsersQueries.GetAllUsers
         {
             var users = await _userRepository.GetAllUsersAsync();
 
+            if (users == null)
+            {
+                throw new NullReferenceException("Não existem usuários cadastrados!");
+            }
+
             var userViewModel = users
                 .Select(u => new UserViewModel(u.Id, u.Name, u.Email, u.Age))
                 .ToList();

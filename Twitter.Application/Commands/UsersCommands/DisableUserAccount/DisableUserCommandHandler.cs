@@ -16,6 +16,11 @@ namespace Twitter.Application.Commands.UsersCommands.DisableUserAccount
         {
             var user = await _userRepository.GetUserByIdAsync(request.Id);
 
+            if (user == null)
+            {
+                throw new NullReferenceException("O id do usuário informado não existe!");
+            }
+
             user.Disable();
 
             await _userRepository.SaveChangesAsync();
