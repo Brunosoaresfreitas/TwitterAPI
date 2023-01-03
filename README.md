@@ -79,6 +79,8 @@ As seguintes tecnologias e métodos foram utilizadas durante o desenvolvimento d
 
 - ``Padrão Repository``
 
+- ``Autenticação e Autorização com Bearer e JWT``
+
 
 ## ✒️ Autores
 - Bruno Henrique
