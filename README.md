@@ -1,6 +1,6 @@
 # <h1 align="center"> TWITTER API </h1>
 
-## <p align="center">![Badge em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=red&style=for-the-badge)</p>
+## <p align="center">![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=RED&style=for-the-badge)</p>
 
 # Índice 
 
@@ -25,7 +25,7 @@ Basicamente o usuário realizará o login na plataforma e então poderá publica
 
 ✔️ Adicionar um comentário a um tweet
 
-❌ Cadastrar / alterar dados cadastrais / excluir cadastro de usuários (A implementar)
+✔️ Cadastrar / alterar dados cadastrais / excluir cadastro de usuários (A implementar)
 
 
 ## 🚀 Como executar o projeto
