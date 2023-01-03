@@ -16,6 +16,11 @@ namespace Twitter.Application.Commands.UsersCommands.UpdateUserAccount
         {
             var user = await _userRepository.GetUserByIdAsync(request.Id);
 
+            if (user.Status == Core.Enums.StatusEnum.Disabled)
+            {
+                throw new InvalidOperationException("O usuário está desativado, não é possível fazer atualizações!");
+            }
+
             user.Update(request.Name, request.Email, request.BirthDate);
 
             await _userRepository.SaveChangesAsync();

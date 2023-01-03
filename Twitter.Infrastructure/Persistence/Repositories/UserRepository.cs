@@ -22,8 +22,6 @@ namespace Twitter.Infrastructure.Persistence.Repositories
         {
             return await _dbContext
                 .Users
-                .Include(t => t.UserTweets)
-                .Include(c => c.UserComments)
                 .SingleOrDefaultAsync(u => u.Id == id);
         }
 

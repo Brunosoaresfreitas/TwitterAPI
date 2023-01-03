@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "z09iEqzYm+ArCfs4aZpUtNrYaNEzExT7DnwuInHf6yE+z23e/+x3tycnh4MLhyY+g8n3OvWR85k0a7bxbtON+A==",
+  "dgSpecHash": "dt2ANViF+bi4pkCz5IY3jyDQ+xJf9JtDgDMu0tz9jt4rNAY7is1Sk580COywlbGlu3/Rb9wipJKHLAIM1jSbUw==",
   "success": true,
   "projectFilePath": "C:\\ProjetoTwitter\\TwitterAPI\\Twitter.API\\Twitter.API.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\Bruno\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\Bruno\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\Bruno\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.12\\microsoft.aspnetcore.authentication.jwtbearer.6.0.12.nupkg.sha512",
     "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Bruno\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

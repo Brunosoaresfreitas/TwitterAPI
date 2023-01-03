@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Twitter.Application.Commands.CreateComment;
 using Twitter.Application.Commands.CreateTweet;
@@ -22,6 +23,7 @@ namespace Twitter.API.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
             var command = new GetAllTweetsQuery();
@@ -37,6 +39,7 @@ namespace Twitter.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "User")]
         public async Task<IActionResult> GetById(int id)
         {
             var command = new GetTweetByIdQuery(id);
@@ -52,6 +55,7 @@ namespace Twitter.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "User")]
         public async Task<IActionResult> Post([FromBody] CreateTweetCommand command)
         {
             var id = await _mediator.Send(command);
@@ -60,6 +64,7 @@ namespace Twitter.API.Controllers
         }
 
         [HttpPost("{id}/comments")]
+        [Authorize(Roles = "User")]
         public async Task<IActionResult> PostComment([FromBody] CreateCommentCommand command)
         {
             await _mediator.Send(command);
@@ -68,6 +73,7 @@ namespace Twitter.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "User")]
         public async Task<IActionResult> Put([FromBody] UpdateTweetCommand command)
         {
             await _mediator.Send(command);
@@ -76,6 +82,7 @@ namespace Twitter.API.Controllers
         }
 
         [HttpPut("{id}/Like")]
+        [Authorize(Roles = "User")]
         public async Task<IActionResult> Like(int id)
         {
             var command = new LikeTweetCommand(id);
@@ -86,6 +93,7 @@ namespace Twitter.API.Controllers
         }
 
         [HttpPut("{id}/Retweet")]
+        [Authorize(Roles = "User")]
         public async Task<IActionResult> Retweet(int id)
         {
             var command = new RetweetTweetCommand(id);
@@ -96,6 +104,7 @@ namespace Twitter.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "User")]
         public async Task<IActionResult> Delete(int id)
         {
             var command = new DeleteTweetCommand(id);

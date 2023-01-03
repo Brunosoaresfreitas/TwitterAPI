@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Twitter.Application.Commands.UsersCommands.CreateUser;
@@ -21,6 +22,7 @@ namespace Twitter.API.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll()
         {
             var query = new GetAllUsersQuery();
@@ -36,6 +38,7 @@ namespace Twitter.API.Controllers
         }
 
         [HttpGet("{id}/user")]
+        [Authorize(Roles = "User")]
         public async Task<IActionResult> GetById(int id)
         {
             var query = new GetUserByIdQuery(id);
@@ -51,6 +54,7 @@ namespace Twitter.API.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Post([FromBody] CreateUserCommand command)
         {
             var id = await _mediator.Send(command);
@@ -59,6 +63,7 @@ namespace Twitter.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "User")]
         public async Task<IActionResult> Update([FromBody] UpdateUserCommand command)
         {
             await _mediator.Send(command);
@@ -67,6 +72,7 @@ namespace Twitter.API.Controllers
         }
 
         [HttpPut("{id}/disable")]
+        [Authorize(Roles = "User")]
         public async Task<IActionResult> Disable(int id)
         {
             var command = new DisableUserCommand(id);

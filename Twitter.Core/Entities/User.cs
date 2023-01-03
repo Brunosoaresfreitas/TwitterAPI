@@ -12,6 +12,8 @@ namespace Twitter.Core.Entities
             BirthDate = birthDate;
             Age = DateTime.Now.Year - birthDate.Year;
 
+            Role = "User";
+
             CreatedAt = DateTime.Now;
             Status = StatusEnum.Active;
             
@@ -24,6 +26,7 @@ namespace Twitter.Core.Entities
         public string Password { get; private set; }
         public DateTime BirthDate { get; private set; }
         public int Age { get; private set; }
+        public string Role { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public StatusEnum Status { get; private set; }
         public List<Tweet> UserTweets { get; private set; }
