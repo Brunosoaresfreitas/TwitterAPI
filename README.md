@@ -58,7 +58,7 @@ $ dotnet build
 # Execute a aplicação 
 $ dotnet run
 
-# O servidor inciará na porta:7155 - acesse http://localhost:7142/swagger
+# O servidor inciará na porta:7155 - acesse https://localhost:7155/swagger
 ```
 
 ## 🛠️ Tecnologias
