@@ -25,7 +25,7 @@ Basicamente o usuário realizará o login na plataforma e então poderá publica
 
 ✔️ Adicionar um comentário a um tweet
 
-✔️ Cadastrar / alterar dados cadastrais / excluir cadastro de usuários (A implementar)
+✔️ Cadastrar / alterar dados cadastrais / excluir cadastro de usuários 
 
 
 ## 🚀 Como executar o projeto
