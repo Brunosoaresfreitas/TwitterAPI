@@ -34,7 +34,6 @@ Basicamente o usuário realizará o login na plataforma e então poderá publica
 
 Antes de executar o projeto, é necessário ter instalado em sua máquina local as seguintes ferramentas: [Git](https://git-scm.com/)
 
-Algum editor para trabalhar com o código, como por exemplo o [Visual Studio](https://visualstudio.microsoft.com/pt-br/) com a carga de trabalho de desenvolvimento Web e do ASP.NET.
 
 
 ## 🎲 Executando a API - Passo a passo
@@ -43,10 +42,10 @@ Algum editor para trabalhar com o código, como por exemplo o [Visual Studio](ht
 # Clone este repositório
 $ git clone https://github.com/Brunosoaresfreitas/TwitterAPI
 
-# Acesse a pasta do projeto no terminal/cmd
-$ cd TwitterAPI
+# Tenha certeza de ter pelo menos o SDK dotnet 6 instalado:
+$ https://dotnet.microsoft.com/en-us/download/dotnet/6.0
 
-# Vá para a pasta API
+# Navegue até a pasta pasta onde se encontra o projeto da API
 $ cd TwitterAPI
 
 # Instale as dependências
